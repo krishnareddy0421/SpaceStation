@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="55q-QZ-QQQ">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpaceStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="Welcome" translatesAutoresizingMaskIntoConstraints="NO" id="Yq7-fl-slY">
+                                <rect key="frame" x="42" y="158.66666666666666" width="292" height="108.99999999999997"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yq7-fl-slY" secondAttribute="height" multiplier="292:109" id="xTx-V8-sbo"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dz4-NN-Bhd">
+                                <rect key="frame" x="167" y="703" width="208" height="75"/>
+                                <accessibility key="accessibilityConfiguration" identifier="StartBtn"/>
+                                <state key="normal" image="Start"/>
+                                <connections>
+                                    <action selector="showPasses:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hbb-bK-yPV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="International Space Station Passes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="SgE-qD-3O2">
+                                <rect key="frame" x="16" y="283" width="343" height="246"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="L1g-6h-rGj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.45471129441624369" green="0.15615434527395589" blue="0.1760588342110167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dz4-NN-Bhd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1gF-0d-4Ek"/>
+                            <constraint firstItem="SgE-qD-3O2" firstAttribute="top" secondItem="Yq7-fl-slY" secondAttribute="bottom" constant="15.5" id="Gda-Bg-H6M"/>
+                            <constraint firstItem="SgE-qD-3O2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Sl9-3v-6Gs"/>
+                            <constraint firstItem="SgE-qD-3O2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YkO-aE-Hax"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SgE-qD-3O2" secondAttribute="trailing" constant="16" id="dgF-LD-34E"/>
+                            <constraint firstItem="dz4-NN-Bhd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gAE-mI-Yep"/>
+                            <constraint firstItem="Yq7-fl-slY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="pbI-SH-GnU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yq7-fl-slY" secondAttribute="trailing" constant="41" id="t3E-fj-xja"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="919-t1-RyH"/>
+                    <connections>
+                        <segue destination="kmH-8m-Jid" kind="show" identifier="PASSES" id="k5F-N2-1Pt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="132.04225352112675"/>
+        </scene>
+        <!--ISS Passes-->
+        <scene sceneID="tnn-VF-cdz">
+            <objects>
+                <tableViewController id="kmH-8m-Jid" customClass="PassesTableViewController" customModule="SpaceStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="w6w-nm-XOb" userLabel="Passes">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ISSPass" textLabel="SIp-79-evX" detailTextLabel="v7F-20-XrO" style="IBUITableViewCellStyleSubtitle" id="3iM-oz-Mhq">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3iM-oz-Mhq" id="IDg-pw-7qH">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SIp-79-evX">
+                                            <rect key="frame" x="16.000000000000004" y="5" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v7F-20-XrO">
+                                            <rect key="frame" x="15.999999999999996" y="25.333333333333332" width="32.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kmH-8m-Jid" id="70p-Qt-j9d"/>
+                            <outlet property="delegate" destination="kmH-8m-Jid" id="Y03-DL-OeY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="ISS Passes" id="lWo-B9-6oW"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vWs-N2-Pdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="131"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vNq-gU-RY4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="55q-QZ-QQQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PSY-iq-lJy">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ybb-20-u9Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oUy-st-o2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-589" y="131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Start" width="208" height="75"/>
+        <image name="Welcome" width="500" height="180"/>
+    </resources>
+</document>

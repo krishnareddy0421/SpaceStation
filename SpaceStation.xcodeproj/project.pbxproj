@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45045B792018588400B06740 /* SpaceStationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45045B782018588400B06740 /* SpaceStationUITests.swift */; };
+		454C2A3F20179F6B00078B82 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454C2A3E20179F6B00078B82 /* Utility.swift */; };
+		454F0BC12016DFB9008BACAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F0BC02016DFB9008BACAD /* AppDelegate.swift */; };
+		454F0BC32016DFB9008BACAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F0BC22016DFB9008BACAD /* ViewController.swift */; };
+		454F0BC62016DFB9008BACAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454F0BC42016DFB9008BACAD /* Main.storyboard */; };
+		454F0BC82016DFB9008BACAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454F0BC72016DFB9008BACAD /* Assets.xcassets */; };
+		454F0BCB2016DFB9008BACAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454F0BC92016DFB9008BACAD /* LaunchScreen.storyboard */; };
+		454F0BD62016DFB9008BACAD /* SpaceStationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F0BD52016DFB9008BACAD /* SpaceStationTests.swift */; };
+		454F0BE52016E005008BACAD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F0BE22016E005008BACAD /* UIViewController+Extension.swift */; };
+		454F0BEB2016E02B008BACAD /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F0BE82016E02A008BACAD /* ConnectionManager.swift */; };
+		454F0BEC2016E02B008BACAD /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F0BE92016E02A008BACAD /* Reach.swift */; };
+		454F0BED2016E02B008BACAD /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F0BEA2016E02B008BACAD /* APIManager.swift */; };
+		454F0BEF201714A0008BACAD /* PassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F0BEE201714A0008BACAD /* PassesTableViewController.swift */; };
+		454F0BF42017254F008BACAD /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F0BF32017254F008BACAD /* Location.swift */; };
+		45A9C6DC201804670063BCBC /* WebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A9C6D9201804670063BCBC /* WebResponse.swift */; };
+		45A9C6DD201804670063BCBC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A9C6DA201804670063BCBC /* Response.swift */; };
+		45A9C6DE201804670063BCBC /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A9C6DB201804670063BCBC /* Request.swift */; };
+		8C3490B1FF92BE0A311EB1F3 /* Pods_SpaceStation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27278BB7036F3E6118BCAA28 /* Pods_SpaceStation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45045B7B2018588400B06740 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 454F0BB52016DFB9008BACAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 454F0BBC2016DFB9008BACAD;
+			remoteInfo = SpaceStation;
+		};
+		454F0BD22016DFB9008BACAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 454F0BB52016DFB9008BACAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 454F0BBC2016DFB9008BACAD;
+			remoteInfo = SpaceStation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		454F0BFA20172758008BACAD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		27278BB7036F3E6118BCAA28 /* Pods_SpaceStation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceStation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45045B762018588400B06740 /* SpaceStationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceStationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45045B782018588400B06740 /* SpaceStationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceStationUITests.swift; sourceTree = "<group>"; };
+		45045B7A2018588400B06740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		454C2A3E20179F6B00078B82 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		454F0BBD2016DFB9008BACAD /* SpaceStation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceStation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		454F0BC02016DFB9008BACAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		454F0BC22016DFB9008BACAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		454F0BC52016DFB9008BACAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		454F0BC72016DFB9008BACAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		454F0BCA2016DFB9008BACAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		454F0BCC2016DFB9008BACAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		454F0BD12016DFB9008BACAD /* SpaceStationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceStationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		454F0BD52016DFB9008BACAD /* SpaceStationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceStationTests.swift; sourceTree = "<group>"; };
+		454F0BD72016DFB9008BACAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		454F0BE22016E005008BACAD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		454F0BE82016E02A008BACAD /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		454F0BE92016E02A008BACAD /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		454F0BEA2016E02B008BACAD /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		454F0BEE201714A0008BACAD /* PassesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassesTableViewController.swift; sourceTree = "<group>"; };
+		454F0BF32017254F008BACAD /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		45A9C6D9201804670063BCBC /* WebResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebResponse.swift; sourceTree = "<group>"; };
+		45A9C6DA201804670063BCBC /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		45A9C6DB201804670063BCBC /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		AD94CE227CA8D22B0F28B851 /* Pods-SpaceStation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceStation.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceStation/Pods-SpaceStation.release.xcconfig"; sourceTree = "<group>"; };
+		B0F4581E278814DFF7580B3D /* Pods-SpaceStation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceStation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceStation/Pods-SpaceStation.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45045B732018588400B06740 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454F0BBA2016DFB9008BACAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3490B1FF92BE0A311EB1F3 /* Pods_SpaceStation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454F0BCE2016DFB9008BACAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45045B772018588400B06740 /* SpaceStationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				45045B782018588400B06740 /* SpaceStationUITests.swift */,
+				45045B7A2018588400B06740 /* Info.plist */,
+			);
+			path = SpaceStationUITests;
+			sourceTree = "<group>";
+		};
+		454F0BB42016DFB9008BACAD = {
+			isa = PBXGroup;
+			children = (
+				454F0BBF2016DFB9008BACAD /* SpaceStation */,
+				454F0BD42016DFB9008BACAD /* SpaceStationTests */,
+				45045B772018588400B06740 /* SpaceStationUITests */,
+				454F0BBE2016DFB9008BACAD /* Products */,
+				983A28FA48C3F9167B6F4DD0 /* Pods */,
+				CADD15093D1C367E6448BCA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		454F0BBE2016DFB9008BACAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				454F0BBD2016DFB9008BACAD /* SpaceStation.app */,
+				454F0BD12016DFB9008BACAD /* SpaceStationTests.xctest */,
+				45045B762018588400B06740 /* SpaceStationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		454F0BBF2016DFB9008BACAD /* SpaceStation */ = {
+			isa = PBXGroup;
+			children = (
+				454F0BF22017251F008BACAD /* Models */,
+				454F0BE72016E01A008BACAD /* WebService */,
+				454F0BE02016DFEC008BACAD /* Extensions */,
+				454F0BC02016DFB9008BACAD /* AppDelegate.swift */,
+				454F0BC22016DFB9008BACAD /* ViewController.swift */,
+				454F0BEE201714A0008BACAD /* PassesTableViewController.swift */,
+				454F0BC42016DFB9008BACAD /* Main.storyboard */,
+				454F0BC72016DFB9008BACAD /* Assets.xcassets */,
+				454F0BC92016DFB9008BACAD /* LaunchScreen.storyboard */,
+				454F0BCC2016DFB9008BACAD /* Info.plist */,
+				454C2A3E20179F6B00078B82 /* Utility.swift */,
+			);
+			path = SpaceStation;
+			sourceTree = "<group>";
+		};
+		454F0BD42016DFB9008BACAD /* SpaceStationTests */ = {
+			isa = PBXGroup;
+			children = (
+				454F0BD52016DFB9008BACAD /* SpaceStationTests.swift */,
+				454F0BD72016DFB9008BACAD /* Info.plist */,
+			);
+			path = SpaceStationTests;
+			sourceTree = "<group>";
+		};
+		454F0BE02016DFEC008BACAD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				454F0BE22016E005008BACAD /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		454F0BE72016E01A008BACAD /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				454F0BEA2016E02B008BACAD /* APIManager.swift */,
+				454F0BE82016E02A008BACAD /* ConnectionManager.swift */,
+				454F0BE92016E02A008BACAD /* Reach.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		454F0BF22017251F008BACAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				454F0BF32017254F008BACAD /* Location.swift */,
+				45A9C6D8201804670063BCBC /* JsonModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		45A9C6D8201804670063BCBC /* JsonModels */ = {
+			isa = PBXGroup;
+			children = (
+				45A9C6D9201804670063BCBC /* WebResponse.swift */,
+				45A9C6DA201804670063BCBC /* Response.swift */,
+				45A9C6DB201804670063BCBC /* Request.swift */,
+			);
+			path = JsonModels;
+			sourceTree = "<group>";
+		};
+		983A28FA48C3F9167B6F4DD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4581E278814DFF7580B3D /* Pods-SpaceStation.debug.xcconfig */,
+				AD94CE227CA8D22B0F28B851 /* Pods-SpaceStation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CADD15093D1C367E6448BCA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27278BB7036F3E6118BCAA28 /* Pods_SpaceStation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45045B752018588400B06740 /* SpaceStationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45045B7F2018588400B06740 /* Build configuration list for PBXNativeTarget "SpaceStationUITests" */;
+			buildPhases = (
+				45045B722018588400B06740 /* Sources */,
+				45045B732018588400B06740 /* Frameworks */,
+				45045B742018588400B06740 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45045B7C2018588400B06740 /* PBXTargetDependency */,
+			);
+			name = SpaceStationUITests;
+			productName = SpaceStationUITests;
+			productReference = 45045B762018588400B06740 /* SpaceStationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		454F0BBC2016DFB9008BACAD /* SpaceStation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 454F0BDA2016DFB9008BACAD /* Build configuration list for PBXNativeTarget "SpaceStation" */;
+			buildPhases = (
+				5C65F320D24976FCF981B4BF /* [CP] Check Pods Manifest.lock */,
+				454F0BB92016DFB9008BACAD /* Sources */,
+				454F0BBA2016DFB9008BACAD /* Frameworks */,
+				454F0BBB2016DFB9008BACAD /* Resources */,
+				454F0BFA20172758008BACAD /* Embed Frameworks */,
+				3B587D360A9AE0203600BB4F /* [CP] Embed Pods Frameworks */,
+				40DEC1708F9DCA61D68009DF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceStation;
+			productName = SpaceStation;
+			productReference = 454F0BBD2016DFB9008BACAD /* SpaceStation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		454F0BD02016DFB9008BACAD /* SpaceStationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 454F0BDD2016DFB9008BACAD /* Build configuration list for PBXNativeTarget "SpaceStationTests" */;
+			buildPhases = (
+				454F0BCD2016DFB9008BACAD /* Sources */,
+				454F0BCE2016DFB9008BACAD /* Frameworks */,
+				454F0BCF2016DFB9008BACAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				454F0BD32016DFB9008BACAD /* PBXTargetDependency */,
+			);
+			name = SpaceStationTests;
+			productName = SpaceStationTests;
+			productReference = 454F0BD12016DFB9008BACAD /* SpaceStationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		454F0BB52016DFB9008BACAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Prasanth;
+				TargetAttributes = {
+					45045B752018588400B06740 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 454F0BBC2016DFB9008BACAD;
+					};
+					454F0BBC2016DFB9008BACAD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					454F0BD02016DFB9008BACAD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 454F0BBC2016DFB9008BACAD;
+					};
+				};
+			};
+			buildConfigurationList = 454F0BB82016DFB9008BACAD /* Build configuration list for PBXProject "SpaceStation" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 454F0BB42016DFB9008BACAD;
+			productRefGroup = 454F0BBE2016DFB9008BACAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				454F0BBC2016DFB9008BACAD /* SpaceStation */,
+				454F0BD02016DFB9008BACAD /* SpaceStationTests */,
+				45045B752018588400B06740 /* SpaceStationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45045B742018588400B06740 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454F0BBB2016DFB9008BACAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454F0BCB2016DFB9008BACAD /* LaunchScreen.storyboard in Resources */,
+				454F0BC82016DFB9008BACAD /* Assets.xcassets in Resources */,
+				454F0BC62016DFB9008BACAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454F0BCF2016DFB9008BACAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B587D360A9AE0203600BB4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpaceStation/Pods-SpaceStation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EZLoadingActivity/EZLoadingActivity.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZLoadingActivity.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceStation/Pods-SpaceStation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40DEC1708F9DCA61D68009DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceStation/Pods-SpaceStation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C65F320D24976FCF981B4BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceStation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45045B722018588400B06740 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45045B792018588400B06740 /* SpaceStationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454F0BB92016DFB9008BACAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454F0BED2016E02B008BACAD /* APIManager.swift in Sources */,
+				454F0BF42017254F008BACAD /* Location.swift in Sources */,
+				454C2A3F20179F6B00078B82 /* Utility.swift in Sources */,
+				454F0BEB2016E02B008BACAD /* ConnectionManager.swift in Sources */,
+				45A9C6DD201804670063BCBC /* Response.swift in Sources */,
+				45A9C6DE201804670063BCBC /* Request.swift in Sources */,
+				454F0BE52016E005008BACAD /* UIViewController+Extension.swift in Sources */,
+				454F0BC32016DFB9008BACAD /* ViewController.swift in Sources */,
+				454F0BEC2016E02B008BACAD /* Reach.swift in Sources */,
+				45A9C6DC201804670063BCBC /* WebResponse.swift in Sources */,
+				454F0BEF201714A0008BACAD /* PassesTableViewController.swift in Sources */,
+				454F0BC12016DFB9008BACAD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454F0BCD2016DFB9008BACAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454F0BD62016DFB9008BACAD /* SpaceStationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45045B7C2018588400B06740 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 454F0BBC2016DFB9008BACAD /* SpaceStation */;
+			targetProxy = 45045B7B2018588400B06740 /* PBXContainerItemProxy */;
+		};
+		454F0BD32016DFB9008BACAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 454F0BBC2016DFB9008BACAD /* SpaceStation */;
+			targetProxy = 454F0BD22016DFB9008BACAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		454F0BC42016DFB9008BACAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				454F0BC52016DFB9008BACAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		454F0BC92016DFB9008BACAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				454F0BCA2016DFB9008BACAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45045B7D2018588400B06740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpaceStationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prasanth.SpaceStationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpaceStation;
+			};
+			name = Debug;
+		};
+		45045B7E2018588400B06740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpaceStationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prasanth.SpaceStationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpaceStation;
+			};
+			name = Release;
+		};
+		454F0BD82016DFB9008BACAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		454F0BD92016DFB9008BACAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		454F0BDB2016DFB9008BACAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F4581E278814DFF7580B3D /* Pods-SpaceStation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZELVJRAH4Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpaceStation/External",
+				);
+				INFOPLIST_FILE = SpaceStation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prasanth.SpaceStation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		454F0BDC2016DFB9008BACAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD94CE227CA8D22B0F28B851 /* Pods-SpaceStation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZELVJRAH4Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpaceStation/External",
+				);
+				INFOPLIST_FILE = SpaceStation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prasanth.SpaceStation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		454F0BDE2016DFB9008BACAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpaceStationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prasanth.SpaceStationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceStation.app/SpaceStation";
+			};
+			name = Debug;
+		};
+		454F0BDF2016DFB9008BACAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpaceStationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prasanth.SpaceStationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceStation.app/SpaceStation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45045B7F2018588400B06740 /* Build configuration list for PBXNativeTarget "SpaceStationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45045B7D2018588400B06740 /* Debug */,
+				45045B7E2018588400B06740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		454F0BB82016DFB9008BACAD /* Build configuration list for PBXProject "SpaceStation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454F0BD82016DFB9008BACAD /* Debug */,
+				454F0BD92016DFB9008BACAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		454F0BDA2016DFB9008BACAD /* Build configuration list for PBXNativeTarget "SpaceStation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454F0BDB2016DFB9008BACAD /* Debug */,
+				454F0BDC2016DFB9008BACAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		454F0BDD2016DFB9008BACAD /* Build configuration list for PBXNativeTarget "SpaceStationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454F0BDE2016DFB9008BACAD /* Debug */,
+				454F0BDF2016DFB9008BACAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 454F0BB52016DFB9008BACAD /* Project object */;
+}
